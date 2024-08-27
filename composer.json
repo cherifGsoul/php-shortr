@@ -1,0 +1,35 @@
+{
+    "name": "cherif/shortr",
+    "description": "Short URL service",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Cherif\\Shortenr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cherif Bouchelaghem"
+        }
+    ],
+    "require": {
+        "symfony/flex": "^2.4",
+        "symfony/framework-bundle": "^7.1",
+        "symfony/routing": "^7.1",
+        "symfony/runtime": "^7.1",
+        "symfony/yaml": "^7.1",
+        "symfony/console": "^7.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
